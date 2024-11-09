@@ -28,28 +28,34 @@ An Event Management System built with Laravel 11 and PHP 8.2, designed to help u
 
 1. **Clone the Repository**
     clone the repository by typing the following in the terminal:
-    •   git clone https://github.com/username/EventManagementSystem.git
-    •   cd EventManagementSystem
+      ```bash
+        git clone https://github.com/username/EventManagementSystem.git
+        cd EventManagementSystem
 
 2. **Install PHP Dependencies**
-    •   composer install
+     ```bash
+        composer install
 
 3. **Install Node Dependencies**
-    •   npm install
+     ```bash
+        npm install
 
 4. **Environment Setup**
     Copy the .env.example file to create a .env file and update the necessary environment variables as needed:
-    •   cp .env.example .env
+      ```bash
+        cp .env.example .env
 
 5. **Run Migrations**
     Migrate the database to create the necessary tables:
-    •   php artisan migrate
+      ```bash
+        php artisan migrate
 
 6. **Run the Development Server**
     Start the Laravel server and Vite development server concurrently:
-    •   npm run dev
+      ```bash
+        npm run dev
 
-##Usage
+## Usage
 
 - Register and Login: Registered users can create an account and log in. Guests join events with a name, email, and event invitation code.
 - Create Events: Registered users (hosts) can create events, set event details, and invite guests.
@@ -66,5 +72,5 @@ An Event Management System built with Laravel 11 and PHP 8.2, designed to help u
 - resources/views: Blade templates for the front-end.
 - routes/web.php: Routes for web access.
 
-License
+## License
 - This project is licensed under the MIT License. See the LICENSE file for details.
