@@ -8,7 +8,6 @@ An Event Management System built with Laravel 11 and PHP 8.2, designed to help u
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [License](#license)
 
 ## Features
@@ -62,15 +61,6 @@ An Event Management System built with Laravel 11 and PHP 8.2, designed to help u
 - Manage Tasks: Hosts can create tasks, set max assignments per task, and assign tasks to users. They can also allow users to self-assign tasks if enabled.
 - Re-Access for Guests: Guests are provided with a unique access code per event, allowing them to re-enter the event without re-registering.
 - Automatic Cleanup: Events and associated data are deleted automatically 10 days after the event’s end date.
-
-## Project Structure
-
-**Here’s an overview of the main directories and files:**
-- app/Http/Controllers: Contains the main application controllers (e.g., EventController, TaskController, GuestLoginController).
-- app/Models: Models for core entities like User, Event, and Task.
-- database/migrations: Migration files for setting up the database schema.
-- resources/views: Blade templates for the front-end.
-- routes/web.php: Routes for web access.
 
 ## License
 - This project is licensed under the MIT License. See the LICENSE file for details.
