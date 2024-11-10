@@ -30,8 +30,8 @@ An Event Management System built with Laravel 11 and PHP 8.2, designed to help u
 1. **Clone the Repository**
     clone the repository by typing the following in the terminal:
       ```bash
-        git clone https://github.com/username/EventManagementSystem.git
-        cd EventManagementSystem
+        git clone https://github.com/AhmadDoobi/event-management-system.git
+        cd event-management-system
 
 2. **Install PHP Dependencies**
      ```bash
