@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->boolean('email_verified')->default(false);
-            $table->string('password')->default('guest'); // 'guest' for guest users
+            $table->string('password');
+            $table->string('email_verification_token', 32)->nullable();
             $table->timestamps();
         });
     }

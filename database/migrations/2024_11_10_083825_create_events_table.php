@@ -20,6 +20,7 @@ return new class extends Migration
             $table->time('time');
             $table->foreignId('host_id')->constrained('users')->onDelete('cascade');
             $table->integer('max_tasks')->default(20); // Optional task limit per event
+            $table->string('invitation_code', 10)->unique();
             $table->timestamps();
         });
     }

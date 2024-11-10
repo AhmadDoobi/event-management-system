@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
             $table->text('content'); // The actual comment content
-            $table->foreignId('user_id')->constrained('users')->onDelete('cascade'); // User who made the comment
-            $table->foreignId('event_id')->nullable()->constrained('events')->onDelete('cascade'); // Event associated with the comment (if any)
-            $table->foreignId('task_id')->nullable()->constrained('tasks')->onDelete('cascade'); // Task associated with the comment (if any)
+            $table->unsignedBigInteger('commentable_id'); // ID of the User or GuestUser
+            $table->string('commentable_type'); // Model type, either User or GuestUser
+            $table->foreignId('task_id')->constrained('tasks')->onDelete('cascade');
             $table->timestamp('date')->useCurrent(); // Comment creation date
             $table->timestamps();
         });

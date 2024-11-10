@@ -18,9 +18,11 @@ return new class extends Migration
             $table->string('category');
             $table->string('status')->default('Pending'); // e.g., Pending, In Progress, Completed
             $table->integer('max_assignments')->default(1);
-            $table->foreignId('assigned_to')->nullable()->constrained('users')->onDelete('set null'); // User ID if assigned
+            $table->unsignedBigInteger('assigned_to_id')->nullable();
+            $table->string('assigned_to_type')->nullable();
             $table->foreignId('event_id')->constrained('events')->onDelete('cascade');
-            $table->foreignId('created_by')->constrained('users')->onDelete('cascade'); // Who created the task
+            $table->unsignedBigInteger('created_by_id')->nullable();
+            $table->string('created_by_type')->nullable();            
             $table->timestamps();
         });
     }
