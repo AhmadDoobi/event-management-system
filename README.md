@@ -1,5 +1,5 @@
 ## Project Completion Status
-<span style="color: red;">- Unfinished yet</span>
+🚧 - Unfinished yet
 
 # Event Management System
 
