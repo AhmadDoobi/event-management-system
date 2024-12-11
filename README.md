@@ -1,5 +1,6 @@
-## project completion status
-- unfinished yet
+## Project Completion Status
+<span style="color: red;">- Unfinished yet</span>
+
 # Event Management System
 
 An Event Management System built with Laravel 11 and PHP 8.2, designed to help users manage events, assign tasks, and allow guest users to participate without full registration. The application supports both registered users and guests, with unique access codes for guest users, and automated cleanup of expired events and data.
